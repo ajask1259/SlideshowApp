@@ -1,24 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZ3-Tp-kMC">
+                                <rect key="frame" x="111" y="396" width="30" height="30"/>
+                                <state key="normal" title="進む"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CI-Yd-zxi">
+                                <rect key="frame" x="192" y="396" width="30" height="30"/>
+                                <state key="normal" title="戻る"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ntw-LZ-r1G">
+                                <rect key="frame" x="273" y="396" width="30" height="30"/>
+                                <state key="normal" title="再生"/>
+                                <connections>
+                                    <action selector="shideShowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pad-2H-XxG"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neko1" id="oDo-ZL-WHP">
+                                <rect key="frame" x="87" y="168" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ntw-LZ-r1G" firstAttribute="leading" secondItem="5CI-Yd-zxi" secondAttribute="trailing" constant="50" id="Bug-oJ-wWf"/>
+                            <constraint firstItem="Ntw-LZ-r1G" firstAttribute="top" secondItem="oDo-ZL-WHP" secondAttribute="bottom" constant="100" id="Ste-EL-ZNw"/>
+                            <constraint firstItem="5CI-Yd-zxi" firstAttribute="leading" secondItem="uZ3-Tp-kMC" secondAttribute="trailing" constant="50" id="ZSm-rS-N0O"/>
+                            <constraint firstItem="5CI-Yd-zxi" firstAttribute="top" secondItem="oDo-ZL-WHP" secondAttribute="bottom" constant="100" id="aju-G4-HTa"/>
+                            <constraint firstItem="uZ3-Tp-kMC" firstAttribute="top" secondItem="oDo-ZL-WHP" secondAttribute="bottom" constant="100" id="c2E-5c-Lsh"/>
+                            <constraint firstItem="5CI-Yd-zxi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fvr-gI-TWn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="5CI-Yd-zxi" id="LOv-4z-lzk"/>
+                        <outlet property="imageView" destination="oDo-ZL-WHP" id="3Yr-pR-kPf"/>
+                        <outlet property="nextButton" destination="uZ3-Tp-kMC" id="WHP-Bm-2gb"/>
+                        <outlet property="startstopButton" destination="Ntw-LZ-r1G" id="CN5-gQ-Z4I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="141" y="103"/>
+        </scene>
+        <!--Scond View Controller-->
+        <scene sceneID="3Gr-69-XE8">
+            <objects>
+                <viewController id="T1E-so-tuy" customClass="ScondViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kb1-yv-WJr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="omm-aJ-It1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1NN-bX-5du" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="102"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="neko1" width="4032" height="3024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

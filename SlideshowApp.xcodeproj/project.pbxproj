@@ -13,6 +13,7 @@
 		24B13E7426110D230057177B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24B13E7226110D230057177B /* Main.storyboard */; };
 		24B13E7626110D240057177B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B13E7526110D240057177B /* Assets.xcassets */; };
 		24B13E7926110D240057177B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24B13E7726110D240057177B /* LaunchScreen.storyboard */; };
+		24B13E8226110D690057177B /* ScondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B13E8126110D690057177B /* ScondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		24B13E7526110D240057177B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24B13E7826110D240057177B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24B13E7A26110D240057177B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24B13E8126110D690057177B /* ScondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				24B13E6C26110D230057177B /* AppDelegate.swift */,
 				24B13E6E26110D230057177B /* SceneDelegate.swift */,
 				24B13E7026110D230057177B /* ViewController.swift */,
+				24B13E8126110D690057177B /* ScondViewController.swift */,
 				24B13E7226110D230057177B /* Main.storyboard */,
 				24B13E7526110D240057177B /* Assets.xcassets */,
 				24B13E7726110D240057177B /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				24B13E7126110D230057177B /* ViewController.swift in Sources */,
 				24B13E6D26110D230057177B /* AppDelegate.swift in Sources */,
+				24B13E8226110D690057177B /* ScondViewController.swift in Sources */,
 				24B13E6F26110D230057177B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
