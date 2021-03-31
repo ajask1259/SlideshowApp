@@ -7,10 +7,15 @@
 
 import UIKit
 
-class ScondViewController: UIViewController {
-
+class SecondViewController: UIViewController {
+    @IBOutlet weak var imageViewscond: UIImageView!
+    
+    var imagenow:UIImage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imageViewscond.image=imagenow
 
         // Do any additional setup after loading the view.
     }
