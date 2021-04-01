@@ -54,6 +54,29 @@ class ViewController: UIViewController {
         //画面遷移
         self.performSegue(withIdentifier: "toSecond", sender: nil)
     }
+    //進む
+    @IBAction func nextButton(_ sender: Any) {
+        if self.timer == nil{
+            nowIndex += 1
+            
+            if nowIndex == images.count{
+                nowIndex=0
+            }
+            imageView.image=images[nowIndex]
+        }
+    }
+    //戻る
+    @IBAction func backButton(_ sender: Any) {
+        if self.timer == nil{
+            if nowIndex != 0{
+                nowIndex -= 1
+                imageView.image=images[nowIndex]
+            }else{
+                nowIndex=3
+                imageView.image=images[nowIndex]
+            }
+        }
+    }
     
     //再生
     @IBAction func shideShowButton(_ sender: Any) {
@@ -70,7 +93,7 @@ class ViewController: UIViewController {
     @objc func changeimage() {
         nowIndex += 1
         
-        if (nowIndex == images.count){
+        if nowIndex == images.count{
             nowIndex=0
         }
         imageView.image=images[nowIndex]
