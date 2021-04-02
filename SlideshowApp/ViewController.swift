@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var startstopButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     
     //タイマー
     var timer:Timer!
@@ -20,16 +22,17 @@ class ViewController: UIViewController {
     var nowIndex:Int=0
     //スライドさせる画像の配列
     var images:[UIImage] = [
-           UIImage(named: "neko1")!,
-           UIImage(named: "neko2")!,
-           UIImage(named: "neko3")!,
-           UIImage(named: "neko4")!
+           UIImage(named: "neko1.jpg")!,
+           UIImage(named: "neko2.jpg")!,
+           UIImage(named: "neko3.jpg")!,
+           UIImage(named: "neko4.jpg")!
        ]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
     }
     //segue
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
@@ -49,6 +52,8 @@ class ViewController: UIViewController {
             self.timer.invalidate()
             self.timer=nil
             startstopButton.setTitle("再生", for: .normal)
+            nextButton.isEnabled = true
+            backButton.isEnabled = true
         }
         //画面遷移
         self.performSegue(withIdentifier: "toSecond", sender: nil)
@@ -82,10 +87,14 @@ class ViewController: UIViewController {
         if self.timer == nil{
             self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeimage), userInfo: nil, repeats: true)
             startstopButton.setTitle("停止", for: .normal)
+            nextButton.isEnabled = false
+            backButton.isEnabled = false
         }else{
             self.timer.invalidate()
             self.timer=nil
             startstopButton.setTitle("再生", for: .normal)
+            nextButton.isEnabled = true
+            backButton.isEnabled = true
         }
     }
     //indexを増やして画像を変更する
