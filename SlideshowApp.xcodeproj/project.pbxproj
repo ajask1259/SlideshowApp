@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24164811261502C600652EEA /* neko4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2416480D261502C600652EEA /* neko4.jpg */; };
-		24164812261502C600652EEA /* neko1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2416480E261502C600652EEA /* neko1.jpg */; };
-		24164813261502C600652EEA /* neko3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2416480F261502C600652EEA /* neko3.jpg */; };
-		24164814261502C600652EEA /* neko2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24164810261502C600652EEA /* neko2.jpg */; };
+		247A58D126170716005E8553 /* neko1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 247A58CD26170715005E8553 /* neko1.jpg */; };
+		247A58D226170716005E8553 /* neko4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 247A58CE26170716005E8553 /* neko4.jpg */; };
+		247A58D326170716005E8553 /* neko3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 247A58CF26170716005E8553 /* neko3.jpg */; };
+		247A58D426170716005E8553 /* neko2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 247A58D026170716005E8553 /* neko2.jpg */; };
 		24B13E6D26110D230057177B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B13E6C26110D230057177B /* AppDelegate.swift */; };
 		24B13E6F26110D230057177B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B13E6E26110D230057177B /* SceneDelegate.swift */; };
 		24B13E7126110D230057177B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B13E7026110D230057177B /* ViewController.swift */; };
@@ -21,10 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2416480D261502C600652EEA /* neko4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = neko4.jpg; path = ../../../../Downloads/neko4.jpg; sourceTree = "<group>"; };
-		2416480E261502C600652EEA /* neko1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = neko1.jpg; path = ../../../../Downloads/neko1.jpg; sourceTree = "<group>"; };
-		2416480F261502C600652EEA /* neko3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = neko3.jpg; path = ../../../../Downloads/neko3.jpg; sourceTree = "<group>"; };
-		24164810261502C600652EEA /* neko2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = neko2.jpg; path = ../../../../Downloads/neko2.jpg; sourceTree = "<group>"; };
+		247A58CD26170715005E8553 /* neko1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = neko1.jpg; sourceTree = "<group>"; };
+		247A58CE26170716005E8553 /* neko4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = neko4.jpg; sourceTree = "<group>"; };
+		247A58CF26170716005E8553 /* neko3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = neko3.jpg; sourceTree = "<group>"; };
+		247A58D026170716005E8553 /* neko2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = neko2.jpg; sourceTree = "<group>"; };
 		24B13E6926110D230057177B /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B13E6C26110D230057177B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24B13E6E26110D230057177B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,10 +71,10 @@
 				24B13E7026110D230057177B /* ViewController.swift */,
 				24B13E8126110D690057177B /* SecondViewController.swift */,
 				24B13E7226110D230057177B /* Main.storyboard */,
-				2416480E261502C600652EEA /* neko1.jpg */,
-				24164810261502C600652EEA /* neko2.jpg */,
-				2416480F261502C600652EEA /* neko3.jpg */,
-				2416480D261502C600652EEA /* neko4.jpg */,
+				247A58CD26170715005E8553 /* neko1.jpg */,
+				247A58D026170716005E8553 /* neko2.jpg */,
+				247A58CF26170716005E8553 /* neko3.jpg */,
+				247A58CE26170716005E8553 /* neko4.jpg */,
 				24B13E7526110D240057177B /* Assets.xcassets */,
 				24B13E7726110D240057177B /* LaunchScreen.storyboard */,
 				24B13E7A26110D240057177B /* Info.plist */,
@@ -139,12 +139,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24164813261502C600652EEA /* neko3.jpg in Resources */,
+				247A58D326170716005E8553 /* neko3.jpg in Resources */,
 				24B13E7926110D240057177B /* LaunchScreen.storyboard in Resources */,
-				24164811261502C600652EEA /* neko4.jpg in Resources */,
-				24164812261502C600652EEA /* neko1.jpg in Resources */,
+				247A58D226170716005E8553 /* neko4.jpg in Resources */,
 				24B13E7626110D240057177B /* Assets.xcassets in Resources */,
-				24164814261502C600652EEA /* neko2.jpg in Resources */,
+				247A58D126170716005E8553 /* neko1.jpg in Resources */,
+				247A58D426170716005E8553 /* neko2.jpg in Resources */,
 				24B13E7426110D230057177B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

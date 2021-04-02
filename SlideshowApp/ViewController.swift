@@ -16,8 +16,7 @@ class ViewController: UIViewController {
     
     //タイマー
     var timer:Timer!
-
-    //配列のインデックス番号
+    //配列インデックス番号
     var nowIndex:Int=0
     //スライドさせる画像の配列
     var images:[UIImage] = [
